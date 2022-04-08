@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../data/background/home.jpg);
+  }
+
+.static_card_presentation >:hover {
+    transform: scale(1.1)
+}
