@@ -5,10 +5,19 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black;
+    background-color: white;
     font-family: "Quicksand", sans-serif;
     box-sizing: border-box;
     font-size: 62.5%;
+}
+
+/* Set Background */
+
+.home, .presentation, .carousel_clan {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .nav {
@@ -29,12 +38,12 @@ html {
 
 .nav div.logo a {
     text-decoration: none;
-    color: #1A1E21;
+    color: #290661;
     font-size: 2.5rem;
 }
 
 .nav div.logo a:hover {
-    color: #fff;
+    color: #111;
 }
 
 .nav div.main_list {
@@ -60,13 +69,13 @@ html {
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #1A1E21;
+    color: #290661;
     line-height: 65px;
     font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #fff;
+    color: #111;
 }
 
 .navTrigger {
@@ -321,16 +330,6 @@ html {
     background-color: #fff;
 }
 
-
-/* Set Background */
-
-.home, .presentation {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-
 /* Home */
 
 .home {
@@ -374,6 +373,10 @@ html {
 .fourth_bandeau {
     background-image: url(../data/image/static_carousel/marchant_clan.jpg);
     left: 75%;
+}
+
+.carousel_clan {
+    height: 60%;
 }
 
 /* Go to top */
