@@ -14,3 +14,82 @@ body {
 .static_card_presentation >:hover {
     transform: scale(1.1)
 }
+
+#first_part_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#second_part_background {
+    position: absolute;
+    top: 0;
+    left: 7%;
+    z-index: 200;
+}
+
+#third_part_background {
+    position: absolute;
+    top: 0;
+    left: 28%;
+    z-index: 300;
+
+}
+
+#fourth_part_background {
+    position: absolute;
+    top: 0;
+    left: 48.8%;
+    z-index: 400;
+}
+
+#fifth_part_background {
+    position: absolute;
+    top: 0;
+    left: 69.1%;
+    z-index: 500;
+}
+
+.text-presentation {
+    display: block;
+}
+
+.text-presentation > div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_part_background {
+    left: 0;
+}
+
+.second_part_background {
+    left: 20%;
+}
+
+.third_part_background {
+    left: 40%;
+}
+
+.fourth_part_background {
+    left: 60%;
+}
+
+.fifth_part_background {
+    left: 80%;
+}
+/*
+.text-presentation > div > button:hover {
+    transform: scale(1.2)
+}*/
+
+.first_part_background > button:hover {
+    transform: scale(1.5)
+}

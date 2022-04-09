@@ -1,0 +1,1 @@
+var shine = document.getElementById("intro");
