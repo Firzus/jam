@@ -13,7 +13,11 @@ html {
 
 .home,
 .presentation,
-.carousel_clan {
+.carousel-clan,
+.slide-desert,
+.slide-feu,
+.slide-glace,
+.slide-foret {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,29 +369,34 @@ html {
 
 /* Title */
 
-.text-apparition {
-    font-size: 40px;
-    font-family: 'Red Hat Display', sans-serif;
-    letter-spacing: 1.5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 40px;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box
 }
 
-.text-apparition * {
-    display: inline-block;
-    overflow: hidden;
-    position: absolute;
+
+svg text {
+    stroke: #0ed1c1;
+    font-size: 150px;
+    font-weight: 700;
+    stroke-width: 5;
+    animation: textAnimate 5s infinite alternate;
 }
 
-.bar {
-    width: 3px;
-    height: 49px;
-    position: absolute;
-    top: -1px;
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dasharray: 20%;
+    }
+
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dasharray: -20%;
+    }
 }
 
 /* Static Carousel Presentation */
@@ -429,6 +438,56 @@ html {
 .fourth_bandeau {
     background-image: url(../data/image/static_carousel/marchant_clan.jpg);
     left: 75%;
+}
+
+/* Slides */
+
+.slide-desert {
+    background-image: url(../data/image/clan-carousel/background/desert.png);
+}
+
+.slide-feu {
+    background-image: url(../data/image/clan-carousel/background/feu.png);
+}
+
+.slide-glace {
+    background-image: url(../data/image/clan-carousel/background/glace.png);
+}
+
+.slide-foret {
+    background-image: url(../data/image/clan-carousel/background/foret.png);
+}
+
+.slide-desert > img {
+    position: relative;
+    bottom: -58.5%;
+    left: -40%;
+    height: 500px;
+    width: auto;
+}
+
+.slide-feu > img {
+    position: relative;
+    bottom: -58.5%;
+    left: -40%;
+    height: 500px;
+    width: auto;
+}
+
+.slide-glace > img {
+    position: relative;
+    bottom: -58.5%;
+    left: -40%;
+    height: 500px;
+    width: auto;
+}
+
+.slide-foret > img {
+    position: relative;
+    bottom: -58.5%;
+    left: -40%;
+    height: 500px;
+    width: auto;
 }
 
 /* Download */
@@ -479,6 +538,7 @@ html {
 
 #svg4174 {
     position: absolute;
+    z-index: 999;
     top: 0px;
     left: 0px;
 }
@@ -670,10 +730,6 @@ html {
     position: absolute;
     top: 33px;
 }
-
-
-
-
 
 /* Go to top */
 
