@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: white;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Enchanted Land", sans-serif;
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
 /* Set Background */
 
-.home, .presentation, .carousel_clan {
+.home, .presentation, .carousel_clan, .download-background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
+
+/* NavBar */
 
 .nav {
     z-index: 1000;
@@ -132,9 +132,7 @@ html {
     }
 }
 
-
 /* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
     cursor: pointer;
@@ -330,11 +328,40 @@ html {
     background-color: #fff;
 }
 
-/* Home */
+/* Background Home */
 
 .home {
-    background-image: url(../data/image/clan-carousel/presentation.jpg);
+    background-image: url(../data/image/home/presentation.jpg);
 }
+
+/* Title */
+
+.text-apparition {
+    font-size:40px;
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing:1.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:600px;
+    height:40px;
+  }
+  
+  .text-apparition * {
+    display:inline-block;
+    overflow:hidden;
+    position:absolute;
+  }
+
+  .bar {
+    width:3px;
+    height:49px;
+    position:absolute;
+    top:-1px;
+  }
+
+/* Static Carousel Presentation */
 
 .static_carousel {
     width: auto;
@@ -351,7 +378,7 @@ html {
 }
 
 .static_carousel > a:hover {
-    opacity: 0.8;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -375,9 +402,12 @@ html {
     left: 75%;
 }
 
-.carousel_clan {
-    height: 60%;
+/* Download */
+
+.download-background {
+  background-color: #212529;
 }
+
 
 /* Go to top */
 
@@ -392,26 +422,22 @@ html {
     cursor: pointer;
 }
 
-/* Rollover Image */
-
 .figure {
-    right: 0px;
-    width: 5%;
-    /* can be omitted for a regular non-lazy image */
-    max-width: 100%;
+  right: 0px;
+  width: 5%; /* can be omitted for a regular non-lazy image */
+  max-width: 100%;
 }
 
 .figure img.image-hover_gototop {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity .2s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
 }
-
 .figure:hover img.image-hover_gototop {
-    opacity: 1;
+  opacity: 1;
 }
